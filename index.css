@@ -1,0 +1,347 @@
+body {
+    background-color: #1b004b;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLES */
+#logoandtext {
+    margin-top: 10px;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 344px) {
+    #logoandtext p {
+    display: none;
+    }
+    }
+
+#navigatorPrincipal {
+    position: fixed;
+    z-index: 999;
+    top: 20%; /* Espaciado desde la parte superior */
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 60px;
+    background-color: aliceblue;
+    justify-content: center;
+    top: 20;
+}
+
+
+
+#navigator {
+    width: 75%;
+    border-radius: 60px;
+}
+
+.DevText {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*WELCOME STYLES */
+
+#welcome {
+    backdrop-filter: blur(100px);
+    padding-top: 190px;
+    position: relative; /* Asegura que el div padre sea un marco de referencia */
+    width: 100%; /* Ajusta el ancho del div padre al 100% */
+    height: 590px; /* Permite que la altura se ajuste automáticamente */
+}
+
+#video {
+    position: relative; /* Asegura que el video sea relativo al div padre */
+    width: 100%; /* Ajusta el ancho del video al 100% del div padre */
+    height: 100%; /* Ajusta la altura del video al 100% del div padre */
+}
+
+video {
+    width: 100%; /* Ajusta el ancho del video al 100% */
+    height: 100%; /* Ajusta la altura del video al 100% */
+    object-fit: cover; /* Ajusta el video para cubrir completamente el área */
+}
+
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%; /* Limita el ancho máximo al 60% */
+    padding: 20px; /* Agrega un poco de espacio interno para mejorar la legibilidad */
+    background-color: rgba(0, 0, 0, 0.05); /* Agrega un fondo semitransparente */
+    border-radius: 10px; /* Añade bordes redondeados al contenedor */
+    color: white;
+}
+
+.principal-text {
+    margin-bottom: 10px; /* Agrega espacio entre la cita y el párrafo */
+}
+
+
+.text-welcome {
+    display: flex;
+    line-height: 1.5; /* Añade espacio entre líneas para mejorar la legibilidad */
+}
+
+.devcrafters-text {
+    color: #3DD2CC; /* Cambia este color al que desees */
+    font-weight: bold; /* Opcional: añade un estilo adicional si lo deseas */
+}
+
+
+/*MISION STYLES */
+
+.mision {
+    padding: 20px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+@media only screen and (max-width: 955px) {
+    .mision {
+        flex-direction: column;
+    }
+    }
+
+
+.image-mision {
+    width: auto;
+}
+
+@media only screen and (max-width: 955px) {
+    .image-mision img {
+        width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho disponible */
+        height: auto; /* Mantener la proporción original de la imagen */
+    }
+    }
+    
+.text-mision {
+    text-align: justify;
+    font-size: 18px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 745px) {
+    .text-mision {
+        width: 80%;
+    }
+    }
+
+
+/*MISION STYLES */
+
+.vision {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+@media only screen and (max-width: 955px) {
+    .vision {
+        flex-direction: column;
+    }
+    }
+
+.hr {
+    background-color: white;
+    border: 0.1px solid rgb(216, 208, 208);
+    width: 100%;
+  }
+
+/*MODO TRABAJO STYLES */
+.text-modo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+.text-modo p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+/*TARJETAS STYLES */
+.contenedor-cartas-padre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carta {
+    background-color: #1b004b;
+    width: 35%;
+    padding: 20px;
+}
+
+.content-carta {
+    padding: 20px;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    box-shadow: 5px 6px 10px rgba(51, 90, 118, 0.7);
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content-cartas {
+        min-height: 300px;
+    }
+    }
+
+@media only screen and (max-width: 815px) {
+    .carta {
+        width: 80%;
+    }
+    .contenedor-cartas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    }
+    
+
+.carta img {
+    width: 90px;
+}
+
+.carta h4 {
+    text-align: center;
+}
+
+.carta p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*Contacto Styles*/
+.gradient {
+    background: linear-gradient(to bottom, #1b004b, #122D42);
+    height: 40px;
+    width: 100%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #122D42;
+    height: cover;
+}
+
+.datosContacto-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: cover;
+    
+}
+
+/*Redes sociales*/
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; /* Espacio de 30px entre los elementos */
+}
+
+.redes-sociales li {
+    background-color: white;
+    border-radius: 60px;
+    width: 50px;
+    height: 50px;
+}
+
+.redes-sociales img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Contacto directo*/
+.contacto-directo ul {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Espacio de 30px entre los elementos */
+}
+
+@media only screen and (max-width: 747px) {
+    .contacto-directo ul {
+        display: block;
+    }
+    }
+
+.contacto-directo li img{
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.contacto-directo li p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contacto-directo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.derechos {
+    text-align: center;
+    color: #3DD2CC;
+}
