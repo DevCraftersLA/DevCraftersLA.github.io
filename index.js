@@ -12,4 +12,5 @@ function scrollToSection(event, sectionId) {
         // Evita el comportamiento predeterminado del enlace
         event.preventDefault();
     }
+    event.preventDefault();
 }
